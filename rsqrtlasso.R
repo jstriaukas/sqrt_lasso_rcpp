@@ -13,7 +13,7 @@ rsqrtlasso <- function(X,Y,standardize=FALSE,Lambda=NULL,lambda.choice="bc",maxI
         L <- (L + Lold)/2
       }
       Lambda = sqrt(2/n) * L
-    } else if (lambda.choice=="bc"){
+    } else if (lambda.choice=="bcw"){
       c <- 1.1
       alpha <- 0.05
       Lambda <- c*sqrt(nrow(X))*qnorm(1-(alpha/(2*ncol(X))))
