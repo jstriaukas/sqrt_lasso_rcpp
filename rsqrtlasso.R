@@ -1,4 +1,4 @@
-rsqrtlasso <- function(X,Y,standardize=FALSE,Lambda=NULL,lambda.choice="bc",maxIter=10000, OptTolNorm=1e-6, OptTolObj=1e-8) {
+rsqrtlasso <- function(X,Y,standardize=FALSE,Lambda=NULL,lambda.choice="bcw",maxIter=10000, OptTolNorm=1e-6, OptTolObj=1e-8) {
   if (is.null(Lambda)){ # code take from RPtests and scalreg packages // ADD: AB choice.
     if (p == 1) {
       L = 0.5
